@@ -11,6 +11,9 @@ syntax enable
 colorscheme Tomorrow
 set ts=2 sw=2 et
 let g:indent_guides_start_level=2
+"Side Numbers
+set number
+highlight LineNr ctermfg=Grey ctermbg=Lightgrey
 
 "for powerline fonts to appear in bar
 let g:airline_powerline_fonts = 1

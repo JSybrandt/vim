@@ -6,6 +6,11 @@ Helptags
 syntax on
 filetype plugin indent on
 
+"colorscheme
+syntax enable
+set background=dark
+colorscheme solarized
+
 "hotkeys
 "for CtrlP file search
 map <C-p> <ESC>:CtrlP 

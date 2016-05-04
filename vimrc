@@ -27,3 +27,7 @@ set spell spelllang=en_us
 nnoremap <leader>f 1z=<cr>
 "toggles spellcheck
 nnoremap <leader>s :set spell!<cr>
+
+"Tagbar toggle
+nmap <F8> :TagbarToggle<CR>
+

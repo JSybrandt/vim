@@ -43,9 +43,6 @@
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim
-[submodule "bundle/ShowMarks"]
-	path = bundle/ShowMarks
-	url = https://github.com/vim-scripts/ShowMarks.git
 [submodule "bundle/SearchComplete"]
 	path = bundle/SearchComplete
 	url = https://github.com/vim-scripts/SearchComplete.git

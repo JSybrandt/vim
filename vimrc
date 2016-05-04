@@ -14,3 +14,7 @@ map <C-n> <ESC>:NERDTree
 
 "spellcheck
 set spell spelllang=en_us
+"fix spelling with \f
+nnoremap <leader>f 1z=
+"toggles spellcheck
+nnoremap <leader>s :set spell!

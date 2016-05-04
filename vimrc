@@ -12,3 +12,5 @@ map <C-p> <ESC>:CtrlP
 "for NERD
 map <C-n> <ESC>:NERDTree
 
+"spellcheck
+set spell spelllang=en_us

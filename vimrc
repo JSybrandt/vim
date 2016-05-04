@@ -11,6 +11,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+"for powerline fonts to appear in bar
+let g:airline_powerline_fonts = 1
+
 "hotkeys
 "for CtrlP file search
 map <C-p> <ESC>:CtrlP 

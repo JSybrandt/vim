@@ -52,3 +52,6 @@
 [submodule "bundle/vimtex"]
 	path = bundle/vimtex
 	url = https://github.com/lervag/vimtex
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git

@@ -31,7 +31,7 @@ let g:airline_powerline_fonts = 1
 
 "hotkeys
 "for CtrlP file search
-map <C-p> <ESC>:CtrlP 
+map <C-p> <ESC>:CtrlP
 "for NERD
 nmap <leader>ne :NERDTree<cr>
 
@@ -42,11 +42,13 @@ nnoremap <leader>f 1z=<cr>
 "toggles spellcheck
 nnoremap <leader>s :set spell!<cr>
 "save a temp every esc
-inoremap <Esc> <Esc>:w! /tmp/vimBackup<CR> 
+inoremap <Esc> <Esc>:w! /tmp/vimBackup<CR>
 
 "Tagbar toggle
 nmap <F8> :TagbarToggle<CR>
 
 "human readable linebreak
 set nolist
-set linebreak 
+set linebreak
+"Disables bottom bar from giving whitespace errors
+let g:airline#extensions#whitespace#enabled = 0

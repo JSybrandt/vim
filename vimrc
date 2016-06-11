@@ -47,3 +47,6 @@ inoremap <Esc> <Esc>:w! /tmp/vimBackup<CR>
 "Tagbar toggle
 nmap <F8> :TagbarToggle<CR>
 
+"human readable linebreak
+set nolist
+set linebreak 

@@ -24,6 +24,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+"Syntax checking
+let g:syntastic_cpp_include_dirs = ['../../include','../include','include','/usr/local/lib/LEDA-6.3-free']
+let g:syntastic_cpp_check_header = 1
+"For LEDA
+let b:syntastic_cpp_cflags = '-I /usr/local/lib/LEDA-6.3-free -L /usr/local/lib/LEDA-6.3-free'
+let g:syntastic_cpp_compiler_options = '-lleda -lX11 -lm'
 
 
 "for powerline fonts to appear in bar
@@ -52,3 +58,4 @@ set nolist
 set linebreak
 "Disables bottom bar from giving whitespace errors
 let g:airline#extensions#whitespace#enabled = 0
+

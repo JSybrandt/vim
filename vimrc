@@ -37,7 +37,7 @@ nnoremap <leader>f 1z=<cr>
 "toggles spellcheck
 nnoremap <leader>s :set spell!<cr>
 "save a temp every esc
-inoremap <Esc> <Esc>:w! /tmp/vimBackup<CR>
+"inoremap <Esc> <Esc>:w! /tmp/vimBackup<CR>
 
 "Tagbar toggle
 nmap <F8> :TagbarToggle<CR>

@@ -2,6 +2,7 @@
 execute pathogen#infect()
 Helptags
 
+
 "basic features
 syntax on
 filetype plugin indent on
@@ -48,9 +49,22 @@ set linebreak
 "Disables bottom bar from giving whitespace errors
 let g:airline#extensions#whitespace#enabled = 0
 
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-
 "Used for tab completion
 set wildmode=longest,list,full
 set wildmenu
+
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+
+function CompileAndRun()
+  :w
+  if &filetype == "cpp"
+    :AsyncRun g++ "%p" -o "%<"; ./"%<"
+  elseif &filetype == "py"
+    :AsyncRun python "%p"
+  endif
+endfunction
+
+map <F5> :call CompileAndRun() <cr>
+

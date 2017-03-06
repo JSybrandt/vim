@@ -53,9 +53,10 @@ let g:airline#extensions#whitespace#enabled = 0
 set wildmode=longest,list,full
 set wildmenu
 
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '--'
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+let g:ale_sign_error = 'E>'
+let g:ale_sign_warning = 'w-'
+let g:ale_sign_column_always = 1
+
 
 function CompileAndRun()
   :w
@@ -66,5 +67,8 @@ function CompileAndRun()
   endif
 endfunction
 
-map <F5> :call CompileAndRun() <cr>
+nmap <F5> :call CompileAndRun() <cr>
+
+nmap <C-k> :ALEPreviousWrap <cr>
+nmap <C-j> :ALENextWrap <cr>
 

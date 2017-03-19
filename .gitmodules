@@ -62,7 +62,7 @@
 	path = bundle/youcompleteme
 	url = https://github.com/valloric/youcompleteme
 [submodule "bundle/ale"]
-	path = ale
+	path = bundle/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "bundle/asyncrun.vim"]
 	path = bundle/asyncrun.vim

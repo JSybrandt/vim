@@ -63,10 +63,10 @@
 	url = https://github.com/valloric/youcompleteme
 [submodule "bundle/ale"]
 	path = ale
-	url = git@github.com:w0rp/ale.git
+	url = https://github.com/w0rp/ale.git
 [submodule "bundle/asyncrun.vim"]
 	path = bundle/asyncrun.vim
-	url = git@github.com:skywind3000/asyncrun.vim.git
+	url = https://github.com/skywind3000/asyncrun.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git

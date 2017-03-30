@@ -9,12 +9,12 @@ filetype plugin indent on
 
 "colorscheme
 syntax enable
-colorscheme Tomorrow
+"colorscheme Tomorrow
 set ts=2 sw=2 et
 let g:indent_guides_start_level=2
 "Side Numbers
 set number
-highlight LineNr ctermfg=Grey ctermbg=Lightgrey
+"highlight LineNr ctermfg=Grey ctermbg=Lightgrey
 
 "error messages
 set statusline+=%#warningmsg#

@@ -72,3 +72,10 @@ nmap <F5> :call CompileAndRun() <cr>
 nmap <C-k> :ALEPreviousWrap <cr>
 nmap <C-j> :ALENextWrap <cr>
 
+nmap <C-L> :vertical resize +1 <cr>
+nmap <C-H> :vertical resize -1 <cr>
+
+:set cursorcolumn
+:set cursorline
+highlight CursorLine   cterm=NONE ctermbg=grey ctermfg=NONE guibg=black guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=grey ctermfg=NONE guibg=black guifg=NONE

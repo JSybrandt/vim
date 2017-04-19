@@ -70,6 +70,3 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vim-crosshairs"]
-	path = vim-crosshairs
-	url = https://github.com/bronson/vim-crosshairs

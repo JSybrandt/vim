@@ -77,5 +77,5 @@ nmap <C-H> :vertical resize -1 <cr>
 
 :set cursorcolumn
 :set cursorline
-highlight CursorLine   cterm=NONE ctermbg=grey ctermfg=NONE guibg=black guifg=NONE
-highlight CursorColumn cterm=NONE ctermbg=grey ctermfg=NONE guibg=black guifg=NONE
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE

@@ -67,3 +67,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/julia-vim"]
+	path = bundle/julia-vim
+	url = git@github.com:JuliaEditorSupport/julia-vim.git

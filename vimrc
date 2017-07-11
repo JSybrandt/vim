@@ -79,3 +79,8 @@ nmap <C-H> :vertical resize -1 <cr>
 :set cursorline
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
+
+" vimtex
+let g:vimtex_compiler_latexmk = {'callback' : 0}
+
+nmap <F9> :w <bar> !make <CR> <CR>

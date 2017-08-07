@@ -86,4 +86,5 @@ let g:vimtex_compiler_latexmk = {'callback' : 0}
 nmap <F9> :w <bar> !make <CR> <CR>
 nnoremap Q <nop>
 
-:command -complete=file -nargs=1 CppOpen :tabe <args>.cpp <bar> :vsplit <args>.h
+:command -complete=file -nargs=1 CppV :tabe <args>.cpp <bar> :vsplit <args>.h
+:command -complete=file -nargs=1 CppH :tabe <args>.cpp <bar> :split <args>.h

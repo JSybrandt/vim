@@ -84,3 +84,6 @@ highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=N
 let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 nmap <F9> :w <bar> !make <CR> <CR>
+nnoremap Q <nop>
+
+:command -complete=file -nargs=1 CppOpen :tabe <args>.cpp <bar> :vsplit <args>.h

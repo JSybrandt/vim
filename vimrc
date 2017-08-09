@@ -88,3 +88,6 @@ nnoremap Q <nop>
 
 :command -complete=file -nargs=1 CppV :tabe <args>.cpp <bar> :vsplit <args>.h
 :command -complete=file -nargs=1 CppH :tabe <args>.cpp <bar> :split <args>.h
+:command W :w
+:command Wq :wq
+:command WQ :wq

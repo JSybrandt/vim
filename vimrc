@@ -87,7 +87,7 @@ nmap <F9> :w <bar> !make <CR> <CR>
 nnoremap Q <nop>
 
 :command -complete=file -nargs=1 CppV :tabe <args>.cpp <bar> :vsplit <args>.h
-:command -complete=file -nargs=1 CppH :tabe <args>.cpp <bar> :split <args>.h
+:command -complete=file -nargs=1 CppH :tabe <args>.cpp <bar> :split <args>.h <bar> :resize 20 <cr>
 :command W :w
 :command Wq :wq
 :command WQ :wq

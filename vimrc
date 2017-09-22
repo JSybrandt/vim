@@ -67,8 +67,6 @@ function CompileAndRun()
   endif
 endfunction
 
-nmap <F5> :call CompileAndRun() <cr>
-
 nmap <C-k> :ALEPreviousWrap <cr>
 nmap <C-j> :ALENextWrap <cr>
 
@@ -91,3 +89,16 @@ nnoremap Q <nop>
 :command W :w
 :command Wq :wq
 :command WQ :wq
+
+:function WritePdf()
+:  w
+:  echo &filetype
+:  if &filetype == "markdown"
+:   execute "!  pandoc " . expand('%:t:r') . ".md -s -o " . expand('%:t:r') . ".pdf"
+:  endif
+:endfunction
+
+
+
+nmap <F5> :call WritePdf() <cr>
+nmap <F6> :execute "! evince " . expand('%:t:r')" <cr>

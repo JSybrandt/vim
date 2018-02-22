@@ -67,8 +67,6 @@ function CompileAndRun()
   endif
 endfunction
 
-nmap <F5> :call CompileAndRun() <cr>
-
 nmap <C-k> :ALEPreviousWrap <cr>
 nmap <C-j> :ALENextWrap <cr>
 
@@ -84,3 +82,24 @@ highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=N
 let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 nmap <F9> :w <bar> !make <CR> <CR>
+nnoremap Q <nop>
+
+:command -complete=file -nargs=1 CppV :tabe <args>.cpp <bar> :vsplit <args>.h
+:command -complete=file -nargs=1 CppH :tabe <args>.cpp <bar> :split <args>.h <bar> :resize 20 <cr>
+:command W :w
+:command Wq :wq
+:command WQ :wq
+
+:function WritePdf()
+:  w
+:  echo &filetype
+:  if &filetype == "markdown"
+:   execute "!  pandoc " . expand('%:t:r') . ".md -s -o " . expand('%:t:r') . ".pdf"
+:  endif
+:endfunction
+
+
+
+nmap <F5> :call WritePdf() <cr>
+nmap <F6> :execute "! evince " . expand('%:t:r')" <cr>
+

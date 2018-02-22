@@ -70,6 +70,12 @@
 [submodule "bundle/julia-vim"]
 	path = bundle/julia-vim
 	url = git@github.com:JuliaEditorSupport/julia-vim.git
-[submodule "bundle/vimtex"]
-	path = bundle/vimtex
-	url = git@github.com:lervag/vimtex.git
+[submodule "bundle/latex-unicoder.vim"]
+	path = bundle/latex-unicoder.vim
+	url = git@github.com:joom/latex-unicoder.vim.git
+[submodule "bundle/vim-syntax-extra"]
+	path = bundle/vim-syntax-extra
+	url = git@github.com:justinmk/vim-syntax-extra.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround

@@ -103,3 +103,4 @@ nnoremap Q <nop>
 nmap <F5> :call WritePdf() <cr>
 nmap <F6> :execute "! evince " . expand('%:t:r')" <cr>
 
+set mouse=a

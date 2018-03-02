@@ -103,4 +103,20 @@ nnoremap Q <nop>
 nmap <F5> :call WritePdf() <cr>
 nmap <F6> :execute "! evince " . expand('%:t:r')" <cr>
 
+<<<<<<< HEAD
 set mouse=a
+=======
+
+" GVIM SETTINGS
+"
+if has('gui_running')
+  :set guioptions-=m  "remove menu bar
+  :set guioptions-=T  "remove toolbar
+  :set guioptions-=r  "remove right-hand scroll bar
+  :set guioptions-=L  "remove left-hand scroll bar
+  :set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 12
+  :colorscheme slate
+  :set nocursorcolumn
+  :set nocursorline
+endif
+>>>>>>> ce5e8c1da7eb7472cb904ddab62412715679aa3d

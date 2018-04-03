@@ -104,6 +104,11 @@ nmap <F5> :call WritePdf() <cr>
 nmap <F6> :execute "! evince " . expand('%:t:r')" <cr>
 
 " set mouse=a
+"
+
+" makes my spelling mistakes easier to identify using the traditional means
+hi clear SpellBad
+hi SpellBad term=undercurl cterm=undercurl ctermfg=9
 
 " GVIM SETTINGS
 "
